@@ -10,7 +10,7 @@ RUN npm ci --omit=dev
 
 COPY . .
 
-RUN npm build
+RUN npm run build
 
 EXPOSE 3010
 
