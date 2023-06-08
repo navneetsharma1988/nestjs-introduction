@@ -10,8 +10,8 @@ RUN npm ci --omit=dev
 
 COPY . .
 
-RUN npm run build
+RUN npx tsc -p ./tsconfig.json
 
-EXPOSE 3010
+EXPOSE 3000
 
 CMD ["npm", "run", "start:prod"]
