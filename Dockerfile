@@ -11,4 +11,4 @@ RUN npm ci --omit=dev
 COPY . .
 
 EXPOSE 3010
-CMD ["npm", "start:prod"]
+CMD ["npm", "run", "start:prod"]
