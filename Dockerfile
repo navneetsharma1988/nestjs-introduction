@@ -10,7 +10,7 @@ RUN npm ci --omit=dev
 
 COPY . .
 
-RUN npx tsc -p ./tsconfig.json
+RUN tsc -p ./tsconfig.json
 
 EXPOSE 3000
 
